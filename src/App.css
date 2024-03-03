@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+}
+
+.Cursor-card {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  text-align: center;
+  line-height: 0;
+}
+
+.Player-button {
+  width: 100px;
+  height: 140px;
+  margin: 5px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#Player1-button { 
+  background-color: rgb(231, 118, 124);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) 
+}
+
+#Player2-button { 
+  background-color: rgb(135, 180, 238);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) 
+}

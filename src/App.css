@@ -18,29 +18,98 @@ body {
   line-height: 0;
 }
 
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player1-container {
+  display: flex;
+  margin-bottom: auto;
+  margin-top: 10px;
+}
+
+.player2-container {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
 .Player-button {
   width: 100px;
   height: 140px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   border-style: none;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
-#Player1-button { 
+#Player1-button-1 { 
   background-color: rgb(231, 118, 124);
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%) 
+  margin: 0 5px;
 }
 
-#Player2-button { 
+#Player1-button-2 { 
+  background-color: rgb(231, 118, 124);
+  margin: 0 5px;
+}
+
+#Player1-button-1[disabled],
+#Player1-button-2[disabled] {
+  background-color: rgb(236, 162, 165);
+  cursor: default;
+}
+
+#Player2-button-1 { 
   background-color: rgb(135, 180, 238);
-  position: absolute;
-  bottom: 10px;
+  margin: 0 5px;
+}
+
+#Player2-button-2 { 
+  background-color: rgb(135, 180, 238);
+  margin: 0 5px;
+}
+
+#Player2-button-1[disabled],
+#Player2-button-2[disabled] {
+  background-color: rgb(187, 209, 238);
+  cursor: default;
+}
+
+.Swap-button {
+  background-color: rgb(95, 95, 95);
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.Swap-button.player1 {
+  margin-bottom: auto;
+}
+
+.Swap-button.player2 {
+  margin-top: auto;
+}
+
+.Swap-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.turn-message {
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%) 
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
 }

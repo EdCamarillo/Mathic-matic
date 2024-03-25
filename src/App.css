@@ -92,6 +92,11 @@ body {
   cursor: pointer;
 }
 
+.Swap-button[disabled] {
+  background-color: rgb(129, 129, 129);
+  cursor: default;
+}
+
 .Swap-button.player1 {
   margin-bottom: auto;
 }

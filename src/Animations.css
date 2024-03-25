@@ -1,0 +1,24 @@
+#Player1-button-1,
+#Player1-button-2,
+#Player2-button-1,
+#Player2-button-2 {
+    transition: transform 0.3s ease;
+}
+
+#Player1-button-1:hover,
+#Player1-button-2:hover {
+    transform: translateY(10px);
+}
+
+#Player2-button-1:hover ,
+#Player2-button-2:hover  {
+    transform: translateY(-10px);
+}
+
+.Swap-button {
+    transition: background-color 0.3s ease;
+}
+
+.Swap-button:not([disabled]):hover {
+    background-color: rgb(71, 71, 71)
+}

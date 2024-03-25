@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './Animations.css';
 import CursorCard from './CursorCard';
 import TurnMessage from './TurnMessage';
 import PlayerButton from './PlayerButton';
@@ -101,15 +102,15 @@ function Mathic() {
   // Check Player turn
   useEffect(() => {
     if (currentPlayer === 1) {
-      swappingState ?
-        setTurnMessage("Player 1 swapping..."):
-        setTurnMessage("Player 1's Turn");
+      swappingState 
+        ? setTurnMessage("Player 1 swapping...")
+        : setTurnMessage("Player 1's Turn");
 
       setTurnMessageColor("rgb(231, 118, 124)");
     } else {
-      swappingState ?
-        setTurnMessage("Player 2 swapping..."):
-        setTurnMessage("Player 2's Turn");
+      swappingState 
+        ? setTurnMessage("Player 2 swapping...")
+        : setTurnMessage("Player 2's Turn");
 
       setTurnMessageColor("rgb(135, 180, 238)");
     }
